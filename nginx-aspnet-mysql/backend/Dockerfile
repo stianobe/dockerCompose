@@ -34,7 +34,7 @@ FROM builder AS publisher
 
 RUN ["dotnet", "publish", "-c", "Release", "-o", "/build"]
 
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/aspnet:6.0
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/aspnet:6.0@sha256:9dea0968155a21f6dc96ef4263862c2b428b24bfd4530f7ddc1e91fe7eacc5b7
 
 WORKDIR /app
 COPY --from=publisher /build .
