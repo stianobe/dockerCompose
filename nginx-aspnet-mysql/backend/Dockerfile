@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:6.0 AS base
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:6.0@sha256:fc57fca25ca6b7de2ffc260c145a27eec47f692211c117456f09f15d34f3a9a2 AS base
 
 WORKDIR /src
 
