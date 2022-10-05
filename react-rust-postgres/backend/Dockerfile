@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1.4
-FROM rust:buster AS base
+FROM rust:buster@sha256:84fcab6d4febd010c3f4408bc590fe662ed3251293a5564da069ffcf7021cada AS base
 
 ENV USER=root
 ENV ROCKET_ADDRESS=0.0.0.0
